@@ -1,0 +1,13 @@
+[
+  {
+    "id": "RB-DB-001",
+    "component": "Database",
+    "description": "Database overload or connection pool issues",
+    "steps": [
+      "Check database CPU and memory usage",
+      "Increase connection pool size",
+      "Scale database instance",
+      "Restart service if necessary"
+    ]
+  }
+]
