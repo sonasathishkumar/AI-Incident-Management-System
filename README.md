@@ -1,98 +1,123 @@
-# 🚨 Incident AI Management System
+# 🚀 AI Incident Management System
 
-## 📌 Overview
+An **AI-powered Incident Management Platform** designed to automatically analyze system incidents, classify severity levels, and provide intelligent triage insights through an interactive dashboard.
 
-Incident AI is an intelligent incident management backend system built using **FastAPI**, **SQLAlchemy**, and **JWT Authentication**.
-The system automatically analyzes alerts using AI and manages incident lifecycle operations securely.
-
----
-
-## 🚀 Features
-
-✅ AI-based Incident Processing
-✅ JWT Authentication
-✅ Role-Based Access Control (RBAC)
-✅ Incident Ownership Security
-✅ Admin Assignment System
-✅ Incident Lifecycle Management
-✅ Secure CRUD APIs
-✅ SQLite Database Integration
+This project demonstrates a **production-style full-stack AI application** combining backend APIs, authentication, automated analysis, and a real-time monitoring dashboard.
 
 ---
 
-## 🏗 Tech Stack
+## 📌 Project Overview
 
-* FastAPI
-* Python
-* SQLAlchemy
-* JWT Authentication
-* SQLite
-* Pydantic
-* Uvicorn
+Modern IT systems generate thousands of alerts daily. Manual incident handling delays response time and increases operational risk.
 
----
+The **AI Incident Management System** solves this problem by:
 
-## 🔐 Roles
-
-### Admin
-
-* Assign incidents
-* Update incidents
-* Delete incidents
-* View all incidents
-
-### Analyst/User
-
-* Create incidents
-* View assigned incidents
-* Update owned incidents
+* Automatically analyzing incident descriptions
+* Classifying incident severity
+* Identifying affected components
+* Suggesting possible root causes
+* Visualizing incidents through a live command center dashboard
 
 ---
 
-## ⚙️ Installation
+## ✨ Key Features
 
-```bash
-git clone <repo-url>
-cd incident_ai
-pip install -r requirements.txt
-```
-
-Run server:
-
-```bash
-python -m uvicorn app:app --reload
-```
-
-Open API Docs:
-
-```
-http://127.0.0.1:8000/docs
-```
+✅ Secure User Authentication (JWT-based)
+✅ AI-powered Incident Analysis
+✅ Automatic Severity Classification
+✅ Incident Creation & Tracking
+✅ Real-time Monitoring Dashboard
+✅ Role-based Access Support
+✅ RESTful FastAPI Backend
+✅ Interactive Streamlit UI
+✅ Data Visualization & Metrics
 
 ---
 
-## 🔑 Default Users
-
-Admin:
+## 🏗️ System Architecture
 
 ```
-username: admin
-password: admin123
+User → Streamlit Dashboard → FastAPI Backend → AI Analysis Engine → Database
 ```
 
-Analyst:
+### Components
 
-```
-username: analyst
-password: analyst123
-```
+* **Frontend:** Streamlit Premium Dashboard
+* **Backend:** FastAPI REST API
+* **AI Layer:** Rule/LLM-based incident analysis
+* **Database:** JSON / Local storage
+* **Authentication:** JWT Token Security
 
 ---
 
-## 📊 Incident Lifecycle
+## 🛠️ Tech Stack
 
-```
-OPEN → IN_PROGRESS → RESOLVED → CLOSED
-```
+| Layer             | Technology               |
+| ----------------- | ------------------------ |
+| Backend           | FastAPI                  |
+| Frontend          | Streamlit                |
+| Language          | Python                   |
+| Visualization     | Plotly                   |
+| API Communication | Requests                 |
+| Authentication    | JWT                      |
+| Server            | Uvicorn                  |
+| Deployment        | Render + Streamlit Cloud |
 
+---
+
+## 🔐 Authentication Flow
+
+1. Create User (`/users`)
+2. Login (`/login`)
+3. Copy Access Token
+4. Paste Token into Dashboard Sidebar
+5. Perform Incident Operations
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint     | Description        |
+| ------ | ------------ | ------------------ |
+| POST   | `/users`     | Create user        |
+| POST   | `/login`     | Authenticate user  |
+| POST   | `/incident`  | Create AI incident |
+| GET    | `/incidents` | Fetch incidents    |
+
+---
+
+## 📊 Dashboard Capabilities
+
+* Incident Overview Metrics
+* Severity Distribution Charts
+* Incident Monitoring Panel
+* AI Incident Creation Interface
+* Live Incident Updates
+
+---
+
+## 🔮 Future Enhancements
+
+* LLM-based Root Cause Analysis
+* Email / Slack Alert Integration
+* Incident Auto-Resolution Suggestions
+* Database Migration (PostgreSQL)
+* Multi-user Role Dashboard
+* Cloud Monitoring Integration
+
+---
+
+## 🎯 Use Cases
+
+* IT Operations Monitoring
+* DevOps Incident Tracking
+* Server Health Management
+* AI-assisted Support Systems
+* Enterprise Monitoring Tools
+
+---
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
 
