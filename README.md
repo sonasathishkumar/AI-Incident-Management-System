@@ -115,9 +115,4 @@ User → Streamlit Dashboard → FastAPI Backend → AI Analysis Engine → Data
 * AI-assisted Support Systems
 * Enterprise Monitoring Tools
 
----
-
-## 📄 License
-
-This project is developed for educational and portfolio purposes.
 
